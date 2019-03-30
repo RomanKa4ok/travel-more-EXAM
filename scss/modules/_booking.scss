@@ -1,0 +1,51 @@
+.booking-1 {
+	background: url('../images/spain-1.jpg')no-repeat top center;
+	background-size: cover;
+	min-height: 700px; 
+	color: #fff;
+
+}
+.booking-2 {
+	background: url('../images/spain-2.jpg')no-repeat top center;
+	background-size: cover;
+	min-height: 700px; 	
+	color: #fff;
+}
+.booking {
+	
+	&__block {
+		width: 100%;
+		background: rgba(0,0,0, 0.6);
+		padding: 50px 30px;
+		margin-top: 225px;
+	}
+	&__country {
+		font: 20px/26px $font;
+		color: $light-grey;
+		margin-bottom: 30px;
+	}
+	&__title {
+		text-transform: uppercase;
+		font: 20px/26px $font;
+		margin-bottom: 30px;
+	}
+	&__desc {
+		font: 16px/26px $font;
+		color: $light-grey;
+		margin-bottom: 30px;
+	}
+	&__button {
+		text-transform: uppercase;
+		font: 16px/26px $title;
+		width: 41.6%;
+		height: 60px;
+		color: #fff;
+		background: $blue;
+		border: 2px solid transparent;
+			&:hover {
+				border: 2px solid #fff;
+				background: lighten($blue, 6%);
+			}
+
+	}
+}

@@ -1,0 +1,137 @@
+.header {
+	background: url('../images/header.jpg') no-repeat top center;
+	background-size: cover;
+	font-family: $font;
+	color: #fff;
+	text-align: center;
+	height: 100vh;	
+	
+	&__scroll {
+		cursor: pointer;
+	}
+	&__scroll-text {
+		font: 400 14px/26px $font;
+		letter-spacing: 2px;
+		color: $light-grey;
+		text-decoration: none;
+
+	}
+	&__nav-wrap {
+		background: $blue;
+		display: flex;
+		height: 80px;
+	}
+
+	&__nav-wrap {
+	}
+	&__logo {
+		font:700 24px/24px $font;
+		color: #fff;
+		text-transform: uppercase;
+		text-decoration: none;
+			border-left: 2px solid transparent;
+			border-right: 2px solid transparent;
+		&:hover {
+			border-left: 2px solid #fff;
+			border-right: 2px solid #fff;
+		}
+	}
+	&__nav {
+		max-width: 640px;
+		width: 100%;
+	}
+	&__list {
+		
+		width: 100%;
+		display: flex;
+
+	}
+	&__item {
+		margin-left: 6.25%;	
+	}
+	&__link {
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		border-bottom: 2px solid transparent;
+		font: 400 14px/46px $title;
+			&:hover {
+				border-bottom: 2px solid #fff;
+			}
+	}
+}
+.search {
+	&__wrap {
+		height: 100%;
+		display: flex;
+		justify-content: space-around;
+		flex-direction: column;
+	
+	}
+	&__title {
+		text-transform: uppercase;
+		font-size: 46px;
+		font-weight: 700;
+		letter-spacing: 3px;	
+	}
+	&__desc {
+		font: 400 22px/26px $font; 
+		letter-spacing: 4.5px;	
+	}
+	&__form {
+		max-width: 650px;
+		width: 100%;
+		margin: 0 auto;
+		height: 60px;
+		display: flex;
+		border: 2px solid #fff;
+	}
+	&__input-wrap {
+		width: 76%;
+		position: relative;
+
+	}
+	&__input {
+	width: 100%;
+	height: 100%;
+	padding: 0 3%;
+	font-size: 15px;
+		&::placeholder {
+			color: transparent;
+		}
+		&:focus + .search__label,
+		&:not(:placeholder-shown) + .search__label
+		 {	
+			color: transparent;
+			padding: 0 5px;
+		}
+	
+	}
+	&__label {
+	position: absolute;
+	left: 25%;
+	top: 40%;
+	color: grey;
+	pointer-events: none;
+
+	}
+	&__button {
+	width: 24%;
+	text-transform: uppercase;
+	color: #fff;
+	background: $blue;
+	line-height: 60px;
+	position: relative;
+	padding-right: 5%; 
+	cursor: pointer;
+		&:hover {
+			background: lighten($blue, 6%);
+		}
+		&-img {
+			font-size: 25px;
+			position: absolute;
+			right: 10%;
+			top: 30%;
+		}
+	}	
+}

@@ -1,0 +1,55 @@
+.steps {
+	background: $dark-grey;
+	color: #fff;
+	display: flex;
+	height: 340px;
+
+	&__wrap {
+		display: flex;
+		width: 86%;
+		margin: 0 auto;
+		justify-content: space-between;
+		position: relative;
+			&:before {
+				content: '';
+				background: url('../images/dots.png')no-repeat;
+				position: absolute;
+				top: -50px;
+				left: 13.5%;
+				width: 31.12%;
+				height: 60px;
+			}
+			&:after {
+				content: '';
+				background: url('../images/dots.png')no-repeat;
+				position: absolute;
+				top: -50px;
+				right: 13.5%;
+				width: 31.12%;
+				height: 60px;
+			}
+	}
+}
+
+.step {
+	text-align: center;
+	&__title {
+		font:400 36px/36px $title;
+		margin-top: 30px;
+	}
+	&__icon-1 {
+		font-size: 80px;
+		color: $blue;
+		
+	}
+	&__icon-2 {
+		font-size: 80px;
+		color: #ff6363;
+		
+	}
+	&__icon-3 {
+		font-size: 80px;
+		color: #00a2ff;
+		
+	}
+}

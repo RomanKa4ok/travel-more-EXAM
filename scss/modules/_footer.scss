@@ -1,0 +1,37 @@
+.footer {
+	color: #fff;
+	background: #232323;
+	text-align: center;
+	padding: 120px 0 50px;
+	&__title {
+		text-transform: uppercase;
+		font:700 24px/26px $font;
+		margin-bottom: 15px;
+	}
+	&__slogan {
+		font: 15px/26px $title;
+		margin-bottom: 30px;
+	}
+	&__list {
+		display: flex;
+		width: 13%;
+		margin: 0 auto;
+		justify-content: space-between;
+	}
+	&__item {
+
+	}
+	&__link {
+		text-decoration: none;
+		color: #fff;
+
+		
+	}
+	&__icon {
+		font-size: 15px;
+		
+		&:hover {
+			color: $blue;
+		}
+	}
+}

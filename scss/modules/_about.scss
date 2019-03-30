@@ -1,0 +1,42 @@
+.about {
+	background: url('../images/choose.jpg') no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+.explore {
+	
+	padding-bottom: 140px;
+	&__title {
+		font: 36px/36px $title;
+		margin-top: 200px;
+		margin-bottom: 60px;
+	}
+	&__desc {
+		font: 16px/26px $font;
+		color: $light-grey;
+		margin-bottom: 30px;
+	}
+	&__button {
+		width: 40.75%;
+		height: 60px;
+		background: $blue;
+		color: #fff;
+		margin-top: 10px;
+		text-transform: uppercase;	
+		font: 16px/26px $title;
+		border: 2px solid transparent;
+			&:hover {
+				border: 2px solid #fff;
+				background: lighten($blue, 6%);
+			}
+	}
+	&__img-1 {
+		margin:120px 0 5px 12%;
+	}
+	&__img-2 {
+		margin-left: 35.2%;
+	}
+}
+[class^="explore__img"]:hover {
+	transform: scale(1.04);
+}
